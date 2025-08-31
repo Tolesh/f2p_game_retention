@@ -1,0 +1,15 @@
+data/
+.env
+__pycache__/
+.ipynb_checkpoints/
+*.csv
+*.parquet
+**/.ipynb_checkpoints/
+notebooks/*
+!notebooks/03-karpov-v1/
+!notebooks/03-karpov-v1/**
+**/.ipynb_checkpoints/
+ch_data/
+.env
+data/
+

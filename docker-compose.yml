@@ -1,0 +1,19 @@
+services:
+  jlab:
+    image: jupyter/datascience-notebook:latest
+    container_name: jlab
+    ports: ["8888:8888"]
+    env_file: .env
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    volumes:
+      - ./:/home/jovyan/work
+    depends_on:
+      - clickhouse
+
+  clickhouse:
+    image: clickhouse/clickhouse-server:latest
+    container_name: clickhouse
+    ports: ["8123:8123","9000:9000"]
+    volumes:
+      - ./ch_data:/var/lib/clickhouse
