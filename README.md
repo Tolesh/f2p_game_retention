@@ -1,24 +1,27 @@
-Кейс по аналитике F2P-игры: считаю **retention** по дням от регистрации, оцениваю **A/B** промо-офферы и формирую **метрики для тематических ивентов**.
-##  Как запустить
+# Mobile Game Analytics — Retention, A/B, Event KPIs
+
+Мини-кейс по аналитике F2P-игры: считаю **retention** по дням от регистрации, оцениваю **A/B** промо-офферы и формирую набор **метрик для тематических ивентов**.
+
+## Как запустить
+
 ```bash
+
 docker compose up -d
+
 # затем открыть Jupyter: http://localhost:8888/lab?token=jlab
-# 2) Локальный README внутри папки проекта
+
+## Короткий README внутри папки проекта
 ```bash
+
+mkdir -p notebooks/03-karpov-v1
+
 cat > notebooks/03-karpov-v1/00_README.md <<'MD'
 
 # 03 — karpov v1 (mobile game analytics)
 
 **Цель:** посчитать retention, оценить A/B офферов, предложить KPI для ивента.  
 
-**Данные:** `data/*.csv` (локально, в git не попадают).  
+**Данные:** в `data/` рядом с ноутбуками (в git не попадают).  
 
-**Как запускать:** открыть ноутбуки по порядку и положить датасеты в `data/`.
-
-## Ключевые метрики
-- **Retention**: D1, D7, D30; когорты по регистрации.  
-
-- **A/B**: CR\_pay, ARPU, ARPPU, uplift; z-test/Bootstrap.  
-
-- **Event**: participation, stage funnel, reward rate, avg progress/day, event ARPU, post-event retention.
+**Запуск:** открыть ноутбуки по порядку в Jupyter.
 
