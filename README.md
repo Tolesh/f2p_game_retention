@@ -58,7 +58,7 @@ user_id revenue testgroup
 - Средний D7 retention: **~6–7%**.
 - Ниже — тепловая карта удержания:
 
-![Cohort Retention Heatmap](images/retention_heatmap.png)
+![Cohort Retention Heatmap](images/retention_heatmap.jpeg)
 
 ---
 
